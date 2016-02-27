@@ -1,0 +1,151 @@
+#bg-image-id{
+	height: 100vh;
+	background-size: cover;
+	margin-top: 0px;
+}
+#editprofile{
+	width: 50%;
+	display:inline-block;
+}
+#moneymanage{
+	width: 50%;
+	display:inline-block;
+}
+#oneline{
+	display:inline-block;
+}
+#linotif{
+	color: white;
+	    text-align: center;
+    font-family: "Nunito";
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+#notifmax{
+	padding: 15px;
+	width: 300px;
+	max-height: 250px;
+	overflow-y: scroll;
+	background-color: #a94442;
+}
+#dropdownMenu1{
+	margin-left: 5px;
+	    margin-top: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+@media screen and (min-width: 1000px){
+	#guidebut{
+    font-size: .4em;
+	}
+}
+@media screen and (max-width: 1000px){
+	#guidebut{
+    font-size: .3em;
+	}
+}.dropdown-menu{
+	max-width: 300px;
+}
+#notifier{
+	    padding-right: 6px;
+    margin-top: 10px;
+    padding-left: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#guidebut{
+	    font-weight: 700;
+    border-radius: 15px;
+    color: #428EFF;
+    background-color: white;
+    height: 70px;
+    width: 100%;
+}
+.nav > li > a {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.navbarhome{
+	top: 0;
+	width: 100%;
+	margin-bottom: 0px;
+	border: 0px;
+	position: absolute;
+}
+.fa-spin-hover:hover {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+.navbarnothome{
+	top: 0;
+	width: 100%;
+	margin-bottom: 0px;
+	border: 0px;
+	position: relative;
+}
+
+.NavBar{
+	position: absolute;
+	width: 100%;
+	background-color: rgba( 11, 181, 250, .8);
+}
+
+/*
+doesn't work, hover color
+*/
+.toptab:hover{
+	background-color: yellow;
+	color: red
+}
+#navbartophome{
+	background-color: rgba( 11, 181, 250, .09);
+	margin-bottom: 0px;
+	border-radius: 1px;
+	opacity: .9;
+	z-index: 1000000;
+}
+#navbartopnothome{
+	background-color: rgba( 11, 181, 250, .9);
+	margin-bottom: 0px;
+	border-radius: 1px;
+	opacity: .9;
+	z-index: 1000000;
+}
+
+.navbartext{
+	color: white;
+}
+
+.navbar-brand{
+	font-weight: bold;
+}
+
+#login-dropdown-list{
+	margin-top:15px;
+	color: white;
+	    margin-left: 10px;
+}
+#spacjh{
+	margin-top: 7px;
+}
+.dropdown-toggle{
+	color: white;
+}
+
+.glyphicon-bullhorn {
+	color: yellow;
+	height: 35px;
+	width: 35px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.money {
+	color: white;
+	font-size: 20pt;
+	margin-right: 20px;
+}

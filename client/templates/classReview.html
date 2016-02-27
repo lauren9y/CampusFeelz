@@ -1,0 +1,18 @@
+<template name = "classReview">
+  <div class="_classReview">
+
+    <div class = "media">
+      <div class ="media-left">
+        <a href="#" >
+          <img class ="media-object" src="{{displayImage}}" width="40px" height="40px">
+        </a>
+      </div>
+      <div class ="media-body">
+        <h4 class="media-heading">{{review.timeReviewed}}: {{displayName}} rated - {{review.rating}}/5</h4>
+        {{review.text}}
+      </div>
+    </div>
+
+  </div>
+
+</template>

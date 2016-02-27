@@ -1,0 +1,80 @@
+<template name="profile">
+<div class = "page-section" id = "pagepic">
+<div class = "__Profile">
+
+	<div class = "page-header" id = 'ph-id'>
+  <br>
+    <div class = "jumbotron" id = "sjumbo">
+      <h1>{{username}}'s Profile</h1>
+    </div>
+    </div>
+    <div class = "jumbotron" id = "tjumbo">
+    <div class = "col-xs=6" id = "leftcol1">
+    <div class = "page-header">
+      <h3 class = "darkgrey">Profile Picture:</h3>
+    </div>
+
+
+
+    <!-- Note: apparently image url's are case sensitive -->
+   
+    <img src = "{{binary}}" width="250px" height="250px" class="img-circle" id = "mediacircle">
+    </div>
+    <div class = "col-xs-6" id = "rightcol1">
+    <div class = "page-header">
+      <h3 class = "darkgrey">Basic Info:</h3>
+    </div>
+
+
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">Display Name</span> <!-- Name inputted here will appear in top right accounts ui dropdown -->
+      <input type="text" class="form-control" id="name-field" placeholder="Ex: John Smith" aria-describedby="basic-addon1" value="{{name}}" readonly>
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon2">Age</span>
+      <input type="text" class="form-control" id="age-field" aria-describedby="basic-addon2" value={{age}} readonly>
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon3">About me:</span>
+      <input type="text" class="form-control" id="about-field" placeholder="Introduce yourself to start finding overlaps!" aria-describedby="basic-addon3" value={{about}} readonly>
+    </div>
+    </div></div>
+
+    <div class = "page-header">
+    	<h3>Classes Taught:</h3>
+    </div>
+
+    {{#if numClasses}}
+          {{#each classes}}
+            {{> profileDashboardElement}}
+          {{/each}}
+    {{/if}}
+    
+    <div class = "jumbotron" id = "jumber">
+    <div class = "page-header" id = "pageh">
+      <h3 id = "Revid">Reviews:</h3>
+    </div>
+
+    <ul id = "ull">
+        {{#each reviews}}
+          <li> {{this}} </li>
+        {{/each}}
+    </ul>
+    </div>
+ <!--   <form id="propic">
+      <input type="file" name="pic" accept="image/*">
+      <input type="submit">
+    </form> -->
+    
+
+    <div>
+
+    </div>
+
+
+
+  </div>
+  </div>
+</template>

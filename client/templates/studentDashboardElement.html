@@ -1,0 +1,22 @@
+<!-- Represents one of the users classes on the main dashboard section
+  **also note that template names (and likely helper names, etc.) cannot by hyphenated
+  -thanks slava - https://github.com/meteor/meteor/issues/1602
+-->
+<template name = "studentDashboardElement">
+<div class= "_studentDashboardElement">
+  <div class="bs-callout bs-callout-info {{isOver}}">
+    <h1>{{title}}</h1>
+    <p><i><b>{{dateText}}</b></i></p>
+    <p>Subject: {{subject}}</p>
+    <p>Cost: $<span class="strikethrough">{{cost}}</span> ${{newcost}}</p>
+    <p>Description: {{description}}</p>
+    <p>{{studentNumber}} students are taking this class</p>
+    <p>Teacher: {{teacher}}</p>
+    <p>Address: {{address}}</p>
+
+
+    <button class="btn btn-warning">Drop Class</button>
+    <a class="btn btn-primary" href="/class/{{_id}}">Class Page</a>
+  </div>
+</div>
+</template>

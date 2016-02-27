@@ -1,0 +1,287 @@
+<template name="home">
+	<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="animate.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+	</head>
+	<div class = "_home">
+	
+		<body>
+			<div>
+				<section>
+					<div class = "page-section" id = "home">
+						<div class = "container" id = "homecontainer">
+							<div id="carouselimage" class="carousel slide" data-ride="carousel">
+								<div class = "registerBar">
+									<div class="form-group">
+										<label id="registerlabel" for="user1"><span id = "nameid"> {{username}} - </span> What would you like to learn?</label>
+										<form id="homesearchbar" class="search form-component input--search">
+											<input type="text" class="form-control" id="user1">
+											<button type="submit" class="btn" id = "twopix"><i class="fa fa-search" title="Search"></i></button>
+											<!--<input type="submit" class="submit">-->
+										</form>
+
+									</div>
+								</div>
+
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img class = "imgslide" src="/Biker.png" alt="First">
+									</div>
+									<div class="item">
+										<img class = "imgslide" src="/food.png" alt="Second">
+									</div>
+									<div class="item">
+										<img class = "imgslide" src="/exercising.png" alt="Third">
+									</div>
+									<div class="item">
+										<img class = "imgslide" src="/guitar.png" alt="Fourth">
+									</div>
+								</div>
+								<a class="left carousel-control" href="#carouselimage" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+								</a>
+								<a class="right carousel-control" href="#carouselimage" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span>
+								</a>
+								<div class = "cover">
+									<div class = "content">
+										<h1 id = "title"> OVERLAPS </h1>
+										<h2 id = "titleunder"> &nbsp;&nbsp;&nbsp; learn for tomorrow </h2>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div>
+				<section>
+					<div class = "page-section" id = "about">
+						<div class = "container">
+							<div id = "About-title">
+								<h1 id = "abouttitle"> What is Overlaps? </h1>
+								<!-- <img id = "pathways" src = "pathways.png">-->
+								<div class="row">
+
+									<div class="col-xs-8" id = "iconvertical">
+										<img class = "icons animated slideInLeft wow" id = "iconleft" src="/pathwayrev.png">
+									</div>
+									<div class="col-xs-3 animated slideInUp wow" id = "iconvertical">
+										<h1 class = "imagedescriptitle"> Upgrade Your Learning </h1>
+										<h3 class = "imagedescrip"> Think of interesting topics you would like to teach, while browsing for a wide variety of classes to take. Overlaps has a unique pricing system that allows teachers to earn profits while keeping costs for students low. </h3>
+									<button type = "button" class = "btn btn-primary" id = "guidebut" target = "_top"> 
+									<a id = "linky" href="/guide" target="_top"> User Guide </a>
+									</button>
+									</div>
+
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div>
+				<section>
+					<div class = "page-section" id = "pricing">
+						<div class = "container">
+							<div id = "price-title">
+								<h1 id = "pricetitle"> Our Pricing Model </h1>
+								<!-- <img id = "pathways" src = "pathways.png">-->
+								<div class="row">
+									<div class="col-xs-3 animated slideInUp wow" id = "iconvertical">
+										<h1 class = "imagedescriptitle"> Learn and Save with Others </h1>
+										<h3 class = "imagedescrip"> With our pricing model, teachers earn more money by attracting more students, while students save when classes grow larger. This way, everyone benefits! Teachers also build up their reputation through student submitted reviews, helping future students select their classes. </h3>
+									</div>
+									<div class="col-xs-8" id = "iconvertical">
+										<img class = "icons animated slideInLeft wow" id = "iconleft" src="/piggyscale.png">
+									</div>
+									
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div>
+				<section>
+					<div class = "page-section1" id = "Topics">
+						<div class = "container" id = "topicontainer">
+							<!-- referenced http://startbootstrap.com/template-overviews/thumbnail-gallery/ -->
+							<div class="row">
+
+								<div class="col-lg-12">
+									<div id = "learn-title">
+										<h1 class="page-header" id = "learntitle">Learn About...</h1>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-xs-4 thumb fade">
+
+									<a class="thumbnail1" href="/search?search=Biking" target="_top">
+										<div class = "image relimage">
+											<img class="img-responsive" src="/tilebike.png" alt="">
+
+											<h4 class = "img-responsive-h fadein">
+												Biking
+											</h4>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-1 col-md-1 col-xs-1 thumb spacercol"></div>
+								<div class="col-lg-7 col-md-7 col-xs-7 thumb fade">
+
+									<a class="thumbnail2" href="/search?search=Music" target="_top">
+										<div class = "image relimage">
+											<img class="img-responsive" src="/tileguitar1.png" alt="">
+
+											<h4 class = "img-responsive-h2 fadein">
+												Music
+											</h4>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-7 col-md-7 col-xs-7 thumb fade">
+
+									<a class="thumbnail2" href="/search?search=Academics"  target="_top">
+										<div class = "image relimage">
+											<img class="img-responsive" src="/tilebook2.png" alt="">
+
+											<h4 class = "img-responsive-h2 fadein">
+												Academics
+											</h4>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-1 col-md-1 col-xs-1 thumb spacercol"></div>
+								<div class="col-lg-4 col-md-4 col-xs-4 thumb fade">
+
+									<a class="thumbnail1" href="/search?search=Coding"  target="_top">
+										<div class = "image relimage">
+											<img class="img-responsive" src="/tilecomp.png" alt="">
+
+											<h4 class = "img-responsive-h fadein">
+												Coding
+											</h4>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-xs-4 thumb fade">
+
+									<a class="thumbnail1" href="/search?search=Cooking"  target="_top">
+										<div class = "image relimage">
+											<img class="img-responsive" src="/tilecook3.png" alt="">
+
+											<h4 class = "img-responsive-h fadein">
+												Cooking
+											</h4>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-1 col-md-1 col-xs-1 thumb spacercol"></div>
+								<div class="col-lg-7 col-md-7 col-xs-7 thumb fade">
+
+									<a class="thumbnail2" href="/search?search=Misc."  target="_top">
+										<div class = "image relimage">
+											<img class="img-responsive" src="/tilemisc1.png" alt="">
+
+											<h4 class = "img-responsive-h2 fadein">
+												Misc
+											</h4>
+										</div>
+									</a>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		<!--
+	-->
+	<div>
+		<section>
+			<div class = "page-section" id = "Mission">
+				<div class = "container">
+					<div id = "classpic_bar" class = "section">
+						<body>
+
+						</body>
+					<!--
+						<form class="class_form">
+							<ul>
+								<li>
+									<h2 id = "teachclass">Teach a class now!</h2>
+								</li>
+								<li>
+									<label class = "labelclass" for="title">Title:</label>
+									<input type="text" class="title classText" name="title" size="35" height="50" placeholder="Give a title to your class!" required>
+										<span class="form_hint"> Give a Title!</span>
+								</li>
+								<li>
+									<label class = "labelclass"  for="subject">Subject:</label>
+									<select name="subject" class="form-control subject classText subjectbox">
+										<option value="Biking">Biking</option>
+										<option value="Cooking">Cooking</option>
+										<option value="Coding">Coding</option>
+										<option value="Academics">Academics</option>
+										<option value="Music">Music</option>
+										<option value="Misc">Misc</option>
+									</select>
+								</li>
+								<li>
+									<label class = "labelclass"  for="cost">Cost: $</label>
+									<input type="number" class="cost classText" name="cost" min="0" height="50" pattern="(\d{3})([\.])(\d{2})" placeholder="Please Enter Cost" required>
+								</li>
+								<li>
+									<label class = "labelclass"  for="description">Description:</label>
+									<textarea name="description" cols="40" class="description classText" rows = "6" placeholder="Describe your class!" minlength="12" required></textarea>
+									<span class="form_hint"> Give a Description(minimum 12 characters)!</span>
+								</li>
+								<li>
+									<button class="submit" type="submit">Submit Form</button>
+								</li>
+							</ul>
+						</form>
+					-->
+					<br><br><br><br><br><br><br>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</div>
+
+<div>
+
+</div>
+
+
+<script type='text/javascript'>
+	$(document).ready(function() {
+		$('#carouselimage').carousel({
+			interval: 3000
+		})
+	});
+</script>
+<script src="js/wow.min.js"></script>
+</body>
+
+
+
+
+</div>
+</template>

@@ -1,0 +1,35 @@
+<template name = "commentTemplate">
+  <div class="_commentTemplate">
+
+    <div class = "media">
+      <div class ="media-left">
+        <a href="#" >
+          <img class ="media-object" src="{{displayImage}}" width="40px" height="40px">
+        </a>
+      </div>
+      <div class ="media-body">
+
+        {{#if flagged}}
+          <h4 class="media-heading flagged-text">{{timePosted}}: {{displayName}} said - <b>hidden by teacher</b></h4>
+          <span class="flagged-text"></span>
+        {{else}}
+          <h4 class="media-heading">{{timePosted}}: {{displayName}} said - </h4>
+          {{postText}}
+        {{/if}}
+      </div>
+      <div class ="media-right">
+        {{#if canDelete}}
+          {{#if isTeacher}}
+            {{#if isOwnComment}}
+              <span class="glyphicon glyphicon-remove" title="remove"></span>
+            {{else}}
+              <span class="glyphicon glyphicon-alert" title="flag and hide"></span>
+            {{/if}}
+          {{/if}}
+
+        {{/if}}
+      </div>
+    </div>
+
+  </div>
+</template>

@@ -1,0 +1,72 @@
+
+<template name="studentDashboard">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+  </head>
+  <div class = "_student-dashboard container-fluid"><!-- For css scoping in meteor -->
+
+    <div class = "page-section">
+      <div class = "jumbotron" id = "dashtitlejum">
+        <h1 id = "studentdashtitle"> Student Dashboard </h1>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6  sidebar-offcanvas" id="sidebar1">
+
+      <div>
+      <a class="btn btn-primary col-xs-12" id="join-class-btn" href="/search"><img class = "walletclass" src = "flatclipboard.png"> &nbsp; &nbsp;  Sign up for a new class</a>
+      </div>
+
+
+  
+
+    <div class ="panel panel-default" id = "thhistory">
+      <div class ="panel-heading" id = "panelheadpink">
+        <img class = "walletclass" src = "flatwallet.png"> &nbsp; &nbsp;  Transaction History
+      </div>
+
+      <ul class= "transaction_history">
+        {{#each transactionHistory}}
+        <li class = "jumbotron translist" id = "jumbotrans">{{this}}</li>
+        {{/each}}
+
+      </ul>
+      <div class="panel-body">
+      </div>
+
+    </div>
+    <div class ="panel panel-default" id = "notifbodyid">
+      <div class = "panel-heading">
+        <img class = "walletclass" src = "flatbell.png"> &nbsp; &nbsp;  Notifications
+
+      </div>
+      <div class="panel-body notification-body">
+
+
+        {{#each notifications}}
+
+        {{> notificationsTemplate}}
+
+        {{/each}}
+
+
+      </div>
+    </div>
+
+
+
+  </div>
+  <div class = "main-section col-xs-12 col-sm-6 ">
+
+    {{#if numClasses}}
+    {{#each classes}}
+    {{> studentDashboardElement}}
+    {{/each}}
+    {{else}}
+    {{ > studentDashboardElementEmpty}}
+    {{/if}}
+
+  </div>
+</div>
+
+
+</template>

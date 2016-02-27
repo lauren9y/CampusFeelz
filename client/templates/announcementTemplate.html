@@ -1,0 +1,23 @@
+<template name = "announcementTemplate">
+  <div class="_announcementTemplate">
+
+    <div class = "media">
+      <div class ="media-left">
+        <a href="#" >
+          <img class ="media-object" src="{{displayImage}}" width="40px" height="40px">
+        </a>
+      </div>
+      <div class ="media-body">
+        <h4 class="media-heading">{{timePosted}}: {{displayName}} said - </h4>
+        {{postText}}
+      </div>
+      <div class ="media-right">
+
+        {{#if isTeacher}}
+          <span class="glyphicon glyphicon-remove"></span>
+        {{/if}}
+      </div>
+    </div>
+
+  </div>
+</template>

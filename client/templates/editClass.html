@@ -1,0 +1,72 @@
+<template name ="editClass">
+
+  <div class="_editClass">
+
+    <div class="panel panel-default">
+
+      <div class="page-header">
+        <h1>Edit class:</h1>
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-addon" id="addon1">Title:</span>
+        <input type="text" class="form-control" value="{{title}}" placeholder="Ex: 8.01" aria-describedby="addon1" id="titleField" autofocus readonly>
+      </div>
+
+
+      <div class="input-group">
+        <span class="input-group-addon" id="addon3">Cost:</span>
+        <input type="number" class="form-control" value={{cost}} placeholder="" aria-describedby="addon3" id="costField" readonly>
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-addon" id="addon4">Description:</span>
+        <textarea type="text" class="form-control" value= "{{description}}" placeholder="" aria-describedby="addon4" id="descField"></textarea>
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-addon" id="addon5">Date of Class:</span>
+        <input type="datetime-local" value="{{createdAt}}" class="form-control" placeholder="" aria-describedby="addon5" id="dateField" readonly>
+        <!--Created At: {{createdAt}}-->
+      </div>
+
+
+      <div class="page-header">
+        <h3>Subject:</h3>
+      </div>
+
+      <div class="list-group">
+
+        <a href="#" class="list-group-item" id="biking">Biking</a>
+        <a href="#" class="list-group-item" id="cooking">Cooking</a>
+        <a href="#" class="list-group-item" id="coding">Coding</a>
+        <a href="#" class="list-group-item" id="academics">Academics</a>
+        <a href="#" class="list-group-item" id="music">Music</a>
+        <a href="#" class="list-group-item" id="misc">Misc.</a>
+
+      </div>
+
+
+      <div class="input-group">
+        <span class="input-group-addon" id="addon9">Location of Class</span>
+
+          <input type = "text" class = "form-control" id = "mapidform" value={{address}} >
+      </div>
+
+      <div class="map-container" id="my_map">
+        {{> googleMap name="exampleMap" options=exampleMapOptions}}
+      </div>
+
+
+
+      <button class="btn btn-primary" id="createBtn2">Submit!</button>
+      <a class="btn btn-warning" href="{{pathFor 'sellerDashboard'}}">Back to Dashboard</a>
+
+    </div>
+
+  </div>
+
+
+
+
+</template>

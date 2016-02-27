@@ -1,0 +1,116 @@
+._seller-dashboard #sidebar1{
+
+  width: 40%;
+  padding: 20px;
+  display: inline-block;
+
+
+}
+
+._seller-dashboard .notification-body  #transscroll {
+    padding: 15px;
+}
+
+#thhistoryy{
+  max-height: 150px;
+  overflow-y: scroll;
+}
+#create-class-btn{
+  text-align: left;
+}
+#transscroll2{
+  height: 100px;
+  overflow-y: scroll;
+}
+@media screen and (min-width: 1000px){
+  .main-section{
+    margin-left: 40%;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1000px){
+  .main-section{
+    margin-left: 45%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 750px){
+  .main-section{
+    margin-left: 50%;
+  }
+}
+.sidebar-offcanvas{
+  position: absolute;
+}
+._seller-dashboard{
+  background-attachment: fixed;
+  background-image:url("bookshelfcactus.jpg");
+  min-height: 130vh;
+  background-repeat: repeat;
+  width: 100%;
+
+}
+.teacherheader{
+  margin-left: 20px;
+}
+.walletclass{
+  height: 20px;
+}
+._seller-dashboard .repclass{
+  height: 30px;
+  width: 35px;
+  margin-top: -5px;
+}
+.clipboardclass{
+  height: 30px;
+}
+#panelheadpink{
+    background-color: rgba(217, 83, 79, 0.31);
+}
+._seller-dashboard .main-section {
+  display: inline-block;
+}
+._seller-dashboard .panel-heading{
+
+  font-family: "Nunito";
+  font-weight: 300;
+}
+._seller-dashboard .btn-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+._seller-dashboard #signupdiv{
+  height: 36px;
+  width: 100%;
+  border-radius: 4px;
+}
+#spac{
+  margin-bottom: 60px;
+}
+#create-class-btn{
+      border-radius: 5px;
+  margin-bottom: 10px;
+}
+.btn{
+  font-family: "Nunito";
+  font-weight: 300;
+}
+._seller-dashboard #create-class-btn {
+  font-family: "Nunito";
+  font-weight: 300;
+}
+
+._seller-dashboard .panel-body {
+  padding: 0px;
+}
+
+._seller-dashboard .glyphicon-heart {
+  color: #FF1493;
+  font-size: 50pt;
+  margin: 20px;
+
+}
+
+._seller-dashboard #reviewValue {
+  font-family: Lato;
+  font-size: 50px;
+  color: darkturquoise;
+}
